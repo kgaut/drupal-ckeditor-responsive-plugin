@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file nd_ckeditor.module
+ * TODO: Enter file description here.
+ */
+
+function nd_ckeditor_ckeditor_plugin() {
+  return array(
+    'responsivness' => array(
+      // Name of the plugin used to write it.
+      'name' => 'responsivness',
+      // Description of the plugin - it would be displayed in the plugins management section of profile settings.
+      'desc' => t('Propose une alternative aux tableaux pour créer des zones responsives.'),
+      // The full path to the CKEditor plugins directory, with the trailing slash.
+      'path' => drupal_get_path('module', 'nd_ckeditor') . '/responsivness/',
+      'buttons' => array(
+        'responsivness' => array(
+          'icon' => 'images/responsivness.png',
+          'label' => 'Créer des zones responsive',
+        )
+      )
+    )
+  );
+}
