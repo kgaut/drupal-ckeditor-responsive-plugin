@@ -1,5 +1,0 @@
-name = ND.CKeditor
-description = Tweaks pour l'editeur WYSIWYG CKeditor : ajout d'un mode "responsive"
-dependencies[] = ckeditor
-package = ND
-core = 7.x

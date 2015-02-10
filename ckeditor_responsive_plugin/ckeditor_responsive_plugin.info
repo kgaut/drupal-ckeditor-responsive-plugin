@@ -1,0 +1,5 @@
+name = Ckeditor Responsive Plugin
+description = Ajout d'un plugin à l'editeur CKeditor pour permettre d'ajouter des zones responsives dans une zone de texte
+dependencies[] = ckeditor
+package = Authoring
+core = 7.x
