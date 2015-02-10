@@ -1,6 +1,3 @@
-/**
- * @file Plugin to count symbols, symbols without blanks and words
- */
 (function () {
     CKEDITOR.plugins.add('responsivness', {
         icon: 'responsivness',
