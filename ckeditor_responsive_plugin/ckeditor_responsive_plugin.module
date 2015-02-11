@@ -24,3 +24,12 @@ function ckeditor_responsive_plugin_ckeditor_plugin() {
     )
   );
 }
+
+function ckeditor_responsive_plugin_ckeditor_settings_alter(&$settings, $conf) {
+  if(isset($settings['js_conf']['extraAllowedContent'])) {
+    $settings['js_conf']['extraAllowedContent'] .= "'div(*);'";
+  }
+  else {
+    $settings['js_conf']['extraAllowedContent'] = "'div(*);'";
+  }
+}
