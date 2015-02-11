@@ -19,7 +19,8 @@ function ckeditor_responsive_plugin_ckeditor_plugin() {
           'icon' => 'images/responsivness.png',
           'label' => 'Créer des zones responsive',
         )
-      )
+      ),
+      'default' => 't'
     )
   );
 }
