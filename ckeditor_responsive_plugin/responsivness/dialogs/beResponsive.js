@@ -1,5 +1,5 @@
-
 CKEDITOR.dialog.add( 'beResponsive', function ( editor ) {
+    var path = Drupal.settings.ckeditor_responsive_plugin.basePath;
     return {
         title: 'Zone Responsive',
         minWidth: 400,
@@ -12,36 +12,17 @@ CKEDITOR.dialog.add( 'beResponsive', function ( editor ) {
                     {
                         type: 'radio',
                         id: 'layout',
-                        label: 'Layout',
+                        label: '<p><strong>Choisissez le type de zone que vous voulez</strong></p><br />',
                         items: [
-                            [ '1 zones - 100%', '1_100'],
-                            [ '2 zones - 50% - 50%', '2_50_50'],
-                            [ '2 zones - 75% - 25%', '2_75_25'],
-                            [ '2 zones - 25% - 75%', '2_25_75'],
-                            [ '3 zones - 33% - 34% - 33%', '3_33_34_33' ],
+                            [ '<br /><em>1 zones - 100%</em><br /><br /><img src="'+path+'/responsivness/images/1_100.png" />', '1_100'],
+                            [ '<br /><em>2 zones - 50% - 50%</em><br /><br /><img src="'+path+'/responsivness/images/2_50_50.png" />', '2_50_50'],
+                            [ '<br /><em>2 zones - 75% - 25%</em><br /><br /><img src="'+path+'/responsivness/images/2_75_25.png" />', '2_75_25'],
+                            [ '<br /><em>2 zones - 25% - 75%</em><br /><br /><img src="'+path+'/responsivness/images/2_25_75.png" />', '2_25_75'],
+                            [ '<br /><em>3 zones - 33% - 34% - 33%</em><br /><br /><img src="'+path+'/responsivness/images/3_33_34_33.png" />', '3_33_34_33' ],
                         ],
-                        //style: 'display: block',
-                        'default': '2_50_50'/*,
-                        onClick: function() {
-                            var val = this.getValue();
-                            var tpl = responsiveness_get_template(val);
-                            if(tpl != "") {
-                                var dialog = CKEDITOR.dialog.getCurrent();
-
-                                var e = dialog.getElement('preview');
-                                console.log(e);
-                                e.setHtml(tpl);
-
-                                return false
-                            }
-                        }*/
-                    }/*,
-                    {
-                        type: 'html',
-                        id: 'preview',
-                        label: 'Aperçu',
-                        html: '<div>loooorem</div>'
-                    }*/
+                        style: 'display: block;text-align:center',
+                        'default': '2_50_50'
+                    }
                 ]
             }
         ],

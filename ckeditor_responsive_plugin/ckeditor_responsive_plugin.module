@@ -1,9 +1,20 @@
 <?php
 
-/**
- * @file nd_ckeditor.module
- * TODO: Enter file description here.
- */
+function ckeditor_responsive_plugin_init() {
+
+  global $base_path;
+  global $base_url;
+
+  $module_base_path = $GLOBALS['base_url'] . $GLOBALS['base_path'] . drupal_get_path('module','ckeditor_responsive_plugin');
+  // or $my_base_path = $base_url . $base_path;
+
+
+  $my_settings = array(
+    'basePath' => $module_base_path
+  );
+
+  drupal_add_js(array('ckeditor_responsive_plugin' => $my_settings), 'setting');
+}
 
 function ckeditor_responsive_plugin_ckeditor_plugin() {
   return array(
