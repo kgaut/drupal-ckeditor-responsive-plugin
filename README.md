@@ -1,7 +1,9 @@
 drupal-responsive-ckeditor
 ==========================
 
-Permet d'avoir un bouton dans ckeditor pour ajouter des zones responsives
+Ce module fournit un plugin pour l'editeur WYSIWYG CKeditor. 
+
+Permet d'avoir un bouton dans ckeditor pour ajouter des zones responsives. 
 
 Aperçu dans l'éditeur:
 
