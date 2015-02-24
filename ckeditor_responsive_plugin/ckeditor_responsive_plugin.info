@@ -1,4 +1,4 @@
-name = Ckeditor Responsive Plugin
+name = CKeditor Responsive Plugin
 description = Ajout d'un plugin à l'éditeur CKeditor proposant un bouton pour ajouter des zones responsives dans une zone de texte
 dependencies[] = ckeditor
 package = User interface
