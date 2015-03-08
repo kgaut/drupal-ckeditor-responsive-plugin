@@ -1,0 +1,11 @@
+name = CKeditor Responsive Plugin Images Styles
+description = Contient les styles d'images qui vont de concert avec le plugin CKeditor Responsive Plugin
+core = 7.x
+package = User interface
+version = 7.x-1.0
+project = ckeditor_responsive_plugin_images_styles
+dependencies[] = image
+features[features_api][] = api:2
+features[image][] = fourcol
+features[image][] = sixcol
+project path = sites/gorgesdufier/modules/drupal-ckeditor-responsive-plugin
