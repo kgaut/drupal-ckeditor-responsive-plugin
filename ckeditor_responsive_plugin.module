@@ -22,13 +22,13 @@ function ckeditor_responsive_plugin_ckeditor_plugin() {
       // Name of the plugin used to write it.
       'name' => 'responsivness',
       // Description of the plugin - it would be displayed in the plugins management section of profile settings.
-      'desc' => t('Propose une alternative aux tableaux pour créer des zones responsives.'),
+      'desc' => t('CKEditor Responsive Plugin : Allow to insert responsive areas'),
       // The full path to the CKEditor plugins directory, with the trailing slash.
       'path' => drupal_get_path('module', 'ckeditor_responsive_plugin') . '/responsivness/',
       'buttons' => array(
         'responsivness' => array(
           'icon' => 'images/responsivness.png',
-          'label' => 'Créer des zones responsive',
+          'label' => t('Add responsive area'),
         )
       ),
       'default' => 't'

@@ -1,16 +1,19 @@
 Installation
 ------------
 
-This module requires CKEditor module to be installed (https://www.drupal.org/project/ckeditor).
+This module requires CKEditor module to be installed
+(https://www.drupal.org/project/ckeditor).
 
 Copy the module folder to your module directory, enable it on the admin module
 page.
-Download Highcharts from http://www.highcharts.com/download and place the folder
-within your librairies folder (usually sites/all/libraries/highcharts)
-Check settings on module configuration page (admin/config/content/chart_field)
-and define the path to highcharts.js file :
-  - sites/all/libraries/highcharts/js/highcharts.js
-Create a new field "chart" for your entity.
+
+Enable the module, and follow the line to your CKEditor profile for which you
+want to enable the plugin. ie : /admin/config/content/ckeditor/edit/Advanced
+
+ 1. Under "Editor appearance", section "Plugins", please be sure that
+"CKEditor Responsive Plugin : Allow to insert responsive areas" is checked
+ 2. Drag the button on your toolbar (the button is the one showed in
+docs/button.jpg
 
 Author
 ------

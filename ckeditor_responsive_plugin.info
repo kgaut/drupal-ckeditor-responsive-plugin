@@ -3,3 +3,4 @@ description = This module provide a CKeditor plugin which allows the user to add
 dependencies[] = ckeditor
 package = User interface
 core = 7.x
+configure   = admin/config/content/ckeditor
