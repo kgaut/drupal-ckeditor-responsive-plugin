@@ -1,5 +1,0 @@
-<?php
-
-function ckeditor_responsive_plugin_enable() {
-  drupal_set_message(t('Le plugin CKeditor responsive est activé, pensez à positioner le bouton sur la barre d\'outil dans la configuration.'));
-}
