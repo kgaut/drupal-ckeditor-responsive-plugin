@@ -1,5 +1,6 @@
 CKeditor Responsive Plugin 7.x-1.0alpha1, xxxx-xx-xx
 --------------------------
+- Add screenshots
 - Update README.txt
 - Change text strings to english
 - Edit module's metadata
