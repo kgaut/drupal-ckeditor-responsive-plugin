@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the CKeditor Responsive Plugin Images Styles feature.
- */
-
-include_once 'ckeditor_responsive_plugin_images_styles.features.inc';
