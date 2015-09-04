@@ -1,2 +1,4 @@
-ckeditor_responsive_plugin 7.x-1-0
-----------------------
+CKeditor Responsive Plugin 7.x-1.0alpha1, xxxx-xx-xx
+--------------------------
+- Change text strings to english
+- Edit module's metadata
