@@ -1,13 +1,10 @@
 <?php
 
 function ckeditor_responsive_plugin_init() {
-
   global $base_path;
   global $base_url;
 
-  $module_base_path = $GLOBALS['base_url'] . $GLOBALS['base_path'] . drupal_get_path('module','ckeditor_responsive_plugin');
-  // or $my_base_path = $base_url . $base_path;
-
+  $module_base_path = $base_url . $base_path . drupal_get_path('module','ckeditor_responsive_plugin');
 
   $my_settings = array(
     'basePath' => $module_base_path
@@ -19,11 +16,8 @@ function ckeditor_responsive_plugin_init() {
 function ckeditor_responsive_plugin_ckeditor_plugin() {
   return array(
     'responsivness' => array(
-      // Name of the plugin used to write it.
       'name' => 'responsivness',
-      // Description of the plugin - it would be displayed in the plugins management section of profile settings.
       'desc' => t('CKEditor Responsive Plugin : Allow to insert responsive areas'),
-      // The full path to the CKEditor plugins directory, with the trailing slash.
       'path' => drupal_get_path('module', 'ckeditor_responsive_plugin') . '/responsivness/',
       'buttons' => array(
         'responsivness' => array(
