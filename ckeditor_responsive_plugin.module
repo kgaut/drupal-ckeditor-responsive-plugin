@@ -1,6 +1,6 @@
 <?php
 
-function ckeditor_responsive_plugin_init() {
+function ckeditor_responsive_plugin_page_build(&$page) {
   global $base_path;
   global $base_url;
 
