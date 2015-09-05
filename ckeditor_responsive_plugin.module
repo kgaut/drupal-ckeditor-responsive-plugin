@@ -23,10 +23,10 @@ function ckeditor_responsive_plugin_ckeditor_plugin() {
         'responsivness' => array(
           'icon' => 'images/responsivness.png',
           'label' => t('Add responsive area'),
-        )
+        ),
       ),
-      'default' => 't'
-    )
+      'default' => 't',
+    ),
   );
 }
 
