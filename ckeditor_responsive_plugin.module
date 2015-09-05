@@ -4,7 +4,7 @@ function ckeditor_responsive_plugin_init() {
   global $base_path;
   global $base_url;
 
-  $module_base_path = $base_url . $base_path . drupal_get_path('module','ckeditor_responsive_plugin');
+  $module_base_path = $base_url . $base_path . drupal_get_path('module', 'ckeditor_responsive_plugin');
 
   $my_settings = array(
     'basePath' => $module_base_path
@@ -31,7 +31,7 @@ function ckeditor_responsive_plugin_ckeditor_plugin() {
 }
 
 function ckeditor_responsive_plugin_ckeditor_settings_alter(&$settings, $conf) {
-  if(isset($settings['js_conf']['extraAllowedContent'])) {
+  if (isset($settings['js_conf']['extraAllowedContent'])) {
     $settings['js_conf']['extraAllowedContent'] .= "'div(*);'";
   }
   else {
