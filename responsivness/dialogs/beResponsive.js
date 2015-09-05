@@ -35,43 +35,46 @@ CKEDITOR.dialog.add('beResponsive', function (editor) {
       }
     }
   };
-
-
 });
 
 function responsiveness_get_template(tpl) {
   var grid = "";
   switch (tpl) {
-    case '1_100' :
+    case '1_100':
       grid = '<div class="ckeditor-col-container clearfix">';
       grid += '<div class="grid-12 twelvecol first-col"><p>lorem ipsum</p></div>';
       grid += '</div><br />';
       break;
-    case '2_50_50' :
+
+    case '2_50_50':
       grid = '<div class="ckeditor-col-container clearfix">';
       grid += '<div class="grid-6 sixcol first-col"><p>lorem ipsum</p></div>';
       grid += '<div class="grid-6 sixcol last-col"><p>lorem ipsum</p></div>';
       grid += '</div><br />';
       break;
-    case '2_75_25' :
+
+    case '2_75_25':
       grid = '<div class="ckeditor-col-container clearfix">';
       grid += '<div class="grid-8 eightcol first-col"><p>lorem ipsum</p></div>';
       grid += '<div class="grid-4 fourcol last-col"><p>lorem ipsum</p></div>';
       grid += '</div><br />';
       break;
-    case '2_25_75' :
+
+    case '2_25_75':
       grid = '<div class="ckeditor-col-container clearfix">';
       grid += '<div class="grid-4 fourcol first-col"><p>lorem ipsum</p></div>';
       grid += '<div class="grid-8 eightcol last-col"><p>lorem ipsum</p></div>';
       grid += '</div><br />';
       break;
-    case '3_33_34_33' :
+
+    case '3_33_34_33':
       grid = '<div class="ckeditor-col-container clearfix">';
       grid += '<div class="grid-4 fourcol first-col"><p>lorem ipsum</p></div>';
       grid += '<div class="grid-4 fourcol"><p>lorem ipsum</p></div>';
       grid += '<div class="grid-4 fourcol last-col"><p>lorem ipsum</p></div>';
       grid += '</div><br />';
       break;
+
   }
   return grid;
 }
