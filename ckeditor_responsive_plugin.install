@@ -1,8 +1,7 @@
 <?php
 /**
  * @file
- * Install, update, and uninstall functions for the CKEditor Responsive Plugin
- * module.
+ * Install, update, and uninstall functions for the module.
  */
 
 /**
