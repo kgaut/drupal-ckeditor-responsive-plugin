@@ -1,3 +1,8 @@
+/**
+ * @file
+ * Plugin functions
+ */
+
 CKEDITOR.dialog.add('beResponsive', function (editor) {
   'use strict';
   var path = Drupal.settings.ckeditor_responsive_plugin.basePath;

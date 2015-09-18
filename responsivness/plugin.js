@@ -1,3 +1,8 @@
+/**
+ * @file
+ * Plugin definition and settings
+ */
+
 (function () {
   'use strict';
   CKEDITOR.plugins.add('responsivness', {
