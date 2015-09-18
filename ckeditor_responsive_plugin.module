@@ -10,7 +10,7 @@
  * @param array $page
  *    Page array.
  */
-function ckeditor_responsive_plugin_page_build(&$page) {
+function ckeditor_responsive_plugin_page_build(Array &$page) {
   global $base_path;
   global $base_url;
 
@@ -53,7 +53,7 @@ function ckeditor_responsive_plugin_ckeditor_plugin() {
  * @param array $conf
  *   CKEditor configuration.
  */
-function ckeditor_responsive_plugin_ckeditor_settings_alter(&$settings, $conf) {
+function ckeditor_responsive_plugin_ckeditor_settings_alter(Array &$settings, Array $conf) {
   if (isset($settings['js_conf']['extraAllowedContent'])) {
     $settings['js_conf']['extraAllowedContent'] .= "'div(*);'";
   }
