@@ -4,6 +4,10 @@
  * Hooks implementations.
  */
 
+/**
+ * Add the basepath to the Drupal.settings js object
+ * @param $page
+ */
 function ckeditor_responsive_plugin_page_build(&$page) {
   global $base_path;
   global $base_url;
@@ -16,6 +20,10 @@ function ckeditor_responsive_plugin_page_build(&$page) {
   drupal_add_js(array('ckeditor_responsive_plugin' => $my_settings), 'setting');
 }
 
+/**
+ * Define the CKEditor plugin
+ * @return array
+ */
 function ckeditor_responsive_plugin_ckeditor_plugin() {
   return array(
     'responsivness' => array(
@@ -33,6 +41,11 @@ function ckeditor_responsive_plugin_ckeditor_plugin() {
   );
 }
 
+/**
+ * Extend CKEditor's settings
+ * @param $settings
+ * @param $conf
+ */
 function ckeditor_responsive_plugin_ckeditor_settings_alter(&$settings, $conf) {
   if (isset($settings['js_conf']['extraAllowedContent'])) {
     $settings['js_conf']['extraAllowedContent'] .= "'div(*);'";
