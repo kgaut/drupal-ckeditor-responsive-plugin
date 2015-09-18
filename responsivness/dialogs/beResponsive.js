@@ -1,5 +1,5 @@
-"use strict";
 CKEDITOR.dialog.add('beResponsive', function (editor) {
+  'use strict';
   var path = Drupal.settings.ckeditor_responsive_plugin.basePath;
   return {
     title: 'Responsive Areas',
@@ -19,7 +19,7 @@ CKEDITOR.dialog.add('beResponsive', function (editor) {
               ['<br /><em>2 areas - 50% - 50%</em><br /><br /><img src="' + path + '/responsivness/images/2_50_50.png" />', '2_50_50'],
               ['<br /><em>2 areas - 75% - 25%</em><br /><br /><img src="' + path + '/responsivness/images/2_75_25.png" />', '2_75_25'],
               ['<br /><em>2 areas - 25% - 75%</em><br /><br /><img src="' + path + '/responsivness/images/2_25_75.png" />', '2_25_75'],
-              ['<br /><em>3 areas - 33% - 34% - 33%</em><br /><br /><img src="' + path + '/responsivness/images/3_33_34_33.png" />', '3_33_34_33'],
+              ['<br /><em>3 areas - 33% - 34% - 33%</em><br /><br /><img src="' + path + '/responsivness/images/3_33_34_33.png" />', '3_33_34_33']
             ],
             style: 'display: block;text-align:center',
             'default': '2_50_50'
@@ -31,7 +31,7 @@ CKEDITOR.dialog.add('beResponsive', function (editor) {
       var dialog = this;
       var mode = dialog.getValueOf('tab-basic', 'layout');
       var tpl = responsiveness_get_template(mode);
-      if (tpl != "") {
+      if (tpl !== "") {
         editor.insertHtml(tpl);
       }
     }
