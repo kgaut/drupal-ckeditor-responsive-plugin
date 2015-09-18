@@ -7,7 +7,7 @@
 /**
  * Add the basepath to the Drupal.settings js object.
  *
- * @param $page
+ * @param array $page
  *    Page array
  */
 function ckeditor_responsive_plugin_page_build(&$page) {
@@ -26,7 +26,7 @@ function ckeditor_responsive_plugin_page_build(&$page) {
  * Define the CKEditor plugin.
  *
  * @return array
- *   CKEditor settings
+ *   CKEditor settings.
  */
 function ckeditor_responsive_plugin_ckeditor_plugin() {
   return array(
@@ -48,10 +48,10 @@ function ckeditor_responsive_plugin_ckeditor_plugin() {
 /**
  * Extend CKEditor's settings.
  *
- * @param Array $settings
- *   CKEditor base settings
- * @param Array $conf
- *   CKEditor configuration
+ * @param array $settings
+ *   CKEditor base settings.
+ * @param array $conf
+ *   CKEditor configuration.
  */
 function ckeditor_responsive_plugin_ckeditor_settings_alter(&$settings, $conf) {
   if (isset($settings['js_conf']['extraAllowedContent'])) {
