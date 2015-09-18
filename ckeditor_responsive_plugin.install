@@ -5,7 +5,7 @@
  */
 
 /**
- * Display a message after the module installation
+ * Display a message after the module installation.
  */
 function ckeditor_responsive_plugin_enable() {
   drupal_set_message(t('The Responsive Area plugin is now enable, please add the
