@@ -5,7 +5,8 @@
  */
 
 /**
- * Add the basepath to the Drupal.settings js object
+ * Add the basepath to the Drupal.settings js object.
+ *
  * @param $page
  */
 function ckeditor_responsive_plugin_page_build(&$page) {
@@ -15,13 +16,14 @@ function ckeditor_responsive_plugin_page_build(&$page) {
   $module_base_path = $base_url . $base_path . drupal_get_path('module', 'ckeditor_responsive_plugin');
 
   $my_settings = array(
-    'basePath' => $module_base_path
+    'basePath' => $module_base_path,
   );
   drupal_add_js(array('ckeditor_responsive_plugin' => $my_settings), 'setting');
 }
 
 /**
- * Define the CKEditor plugin
+ * Define the CKEditor plugin.
+ *
  * @return array
  */
 function ckeditor_responsive_plugin_ckeditor_plugin() {
@@ -42,7 +44,8 @@ function ckeditor_responsive_plugin_ckeditor_plugin() {
 }
 
 /**
- * Extend CKEditor's settings
+ * Extend CKEditor's settings.
+ *
  * @param $settings
  * @param $conf
  */
