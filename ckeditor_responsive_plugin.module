@@ -9,7 +9,6 @@ function ckeditor_responsive_plugin_page_build(&$page) {
   $my_settings = array(
     'basePath' => $module_base_path
   );
-
   drupal_add_js(array('ckeditor_responsive_plugin' => $my_settings), 'setting');
 }
 
