@@ -1,6 +1,6 @@
 /**
  * @file
- * Plugin definition and settings
+ * Plugin definition and settings.
  */
 
 (function () {

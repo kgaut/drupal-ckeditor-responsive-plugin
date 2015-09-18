@@ -1,6 +1,6 @@
 /**
  * @file
- * Plugin functions
+ * Plugin functions.
  */
 
 CKEDITOR.dialog.add('beResponsive', function (editor) {
