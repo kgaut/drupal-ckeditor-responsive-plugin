@@ -27,7 +27,7 @@ CKEDITOR.dialog.add('beResponsive', function (editor) {
               ['<br /><em>3 areas - 33% - 34% - 33%</em><br /><br /><img src="' + path + '/responsivness/images/3_33_34_33.png" />', '3_33_34_33']
             ],
             style: 'display: block;text-align:center',
-            'default': '2_50_50'
+            default: '2_50_50'
           }
         ]
       }
