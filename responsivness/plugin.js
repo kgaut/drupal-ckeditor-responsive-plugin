@@ -1,4 +1,5 @@
 (function () {
+  'use strict';
   CKEDITOR.plugins.add('responsivness', {
     icon: 'responsivness',
     init: function (editor) {

@@ -39,6 +39,7 @@ CKEDITOR.dialog.add('beResponsive', function (editor) {
 });
 
 function responsiveness_get_template(tpl) {
+  'use strict';
   var grid = "";
   switch (tpl) {
     case '1_100':
