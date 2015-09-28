@@ -47,6 +47,13 @@ want to enable the plugin. ie : /admin/config/content/ckeditor/edit/Advanced
 "CKEditor Responsive Plugin : Allow to insert responsive areas" is checked
  2. Drag the button on your toolbar (the button is the one showed in
 docs/button.jpg
+ 3. The text format you are using should allow div to be used within the 
+ textarea. (If you are using the "Limit allowed HTML tags" you should add 
+ div") in the allowed HTML tags list.
+ 4. The added css classes are "*col" (onecol, twocol...) and grid-* (grid-1 
+ grid-2...) Make sure theses classes are working with your theme. If they 
+ don't, have a look to the responsivness.css/responsivness.css file to copy 
+ the appropriates classes. 
 
 
 TROUBLESHOOTING
