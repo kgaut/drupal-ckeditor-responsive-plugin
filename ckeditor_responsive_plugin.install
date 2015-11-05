@@ -6,6 +6,7 @@
 
 /**
  * Display a message after the module installation.
+ * Implements hook_enable().
  */
 function ckeditor_responsive_plugin_enable() {
   drupal_set_message(t('The Responsive Area plugin is now enable, please add the

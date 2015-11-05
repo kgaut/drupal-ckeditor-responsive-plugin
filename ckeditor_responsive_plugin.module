@@ -6,6 +6,7 @@
 
 /**
  * Add the basepath to the Drupal.settings js object.
+ * Implements hook_page_build().
  *
  * @param array $page
  *    Page array.
@@ -21,9 +22,9 @@ function ckeditor_responsive_plugin_page_build(array &$page) {
   );
   drupal_add_js(array('ckeditor_responsive_plugin' => $my_settings), 'setting');
 }
-
 /**
  * Define the CKEditor plugin.
+ * Implements hook_ckeditor_plugin().
  *
  * @return array
  *   CKEditor settings.
@@ -47,6 +48,7 @@ function ckeditor_responsive_plugin_ckeditor_plugin() {
 
 /**
  * Extend CKEditor's settings.
+ * Implements hook_ckeditor_settings_alter().
  *
  * @param array $settings
  *   CKEditor base settings.
