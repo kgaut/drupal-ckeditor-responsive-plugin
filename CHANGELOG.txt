@@ -1,3 +1,7 @@
+CKeditor Responsive Plugin 8.x-1.0alpha1, xxxx-xx-xx
+--------------------------
+- Start migration to Drupal 8
+
 CKeditor Responsive Plugin 7.x-1.0alpha1, xxxx-xx-xx
 --------------------------
 - Add screenshots
