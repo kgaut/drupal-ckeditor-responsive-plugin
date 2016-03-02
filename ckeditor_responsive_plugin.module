@@ -57,7 +57,7 @@ function ckeditor_responsive_plugin_ckeditor_plugin() {
  */
 function ckeditor_responsive_plugin_ckeditor_settings_alter(array &$settings, array $conf) {
   if (isset($settings['js_conf']['extraAllowedContent'])) {
-    $settings['js_conf']['extraAllowedContent'] .= "'div(*);'";
+    $settings['js_conf']['extraAllowedContent'] = substr($settings['js_conf']['extraAllowedContent'],0,-1)."a(*);'";
   }
   else {
     $settings['js_conf']['extraAllowedContent'] = "'div(*);'";
