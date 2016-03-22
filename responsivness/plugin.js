@@ -21,7 +21,7 @@
       editor.on('instanceReady', function () {
         this.document.appendStyleSheet(cssPath);
       });
-      editor.addCommand('beResponsive', new CKEDITOR.dialogCommand('beResponsive'));
+      editor.addCommand('beResponsive', new CKEDITOR.dialogCommand('beResponsive',{ allowedContent : 'div(*)' } ));
 
       CKEDITOR.dialog.add('beResponsive', this.path + 'dialogs/beResponsive.js');
     }
