@@ -12,10 +12,12 @@
  *    Page array.
  */
 function ckeditor_responsive_plugin_page_build(array &$page) {
-  global $base_path;
-  global $base_url;
 
-  $module_base_path = $base_url . $base_path . drupal_get_path('module', 'ckeditor_responsive_plugin');
+  $module_base_path = url( drupal_get_path('module', 'ckeditor_responsive_plugin'),
+    array(
+      'absolute'=>true,
+    )
+  );
 
   $my_settings = array(
     'basePath' => $module_base_path,
