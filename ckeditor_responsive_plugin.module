@@ -24,6 +24,7 @@ function ckeditor_responsive_plugin_page_build(array &$page) {
   );
   drupal_add_js(array('ckeditor_responsive_plugin' => $my_settings), 'setting');
 }
+
 /**
  * Define the CKEditor plugin.
  * Implements hook_ckeditor_plugin().
