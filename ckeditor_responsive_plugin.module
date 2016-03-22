@@ -44,7 +44,6 @@ function ckeditor_responsive_plugin_ckeditor_plugin() {
           'label' => t('Add responsive area'),
         ),
       ),
-      'default' => 't',
     ),
   );
 }
