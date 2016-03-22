@@ -1,4 +1,8 @@
-/* 4.85%;  } /* grid_1  */
+.ckeditor-col-container {
+  width : 100%;
+}
+
+  /* 4.85%;  } /* grid_1  */
 .onecol,
 .grid-1 {
   width: 5.801104972%;
@@ -98,6 +102,12 @@
   float: left;
   margin-left: 2.762430939%;
   border: dashed 1px #aaa;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body.adminimal-theme div.ckeditor-col-container > div {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
