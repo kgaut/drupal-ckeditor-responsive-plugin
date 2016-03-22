@@ -36,7 +36,7 @@ CKEDITOR.dialog.add('beResponsive', function (editor) {
       var dialog = this;
       var mode = dialog.getValueOf('tab-basic', 'layout');
       var tpl = responsiveness_get_template(mode);
-      if (tpl !== "") {
+      if (tpl !== '') {
         editor.insertHtml(tpl);
       }
     }
@@ -45,7 +45,7 @@ CKEDITOR.dialog.add('beResponsive', function (editor) {
 
 function responsiveness_get_template(tpl) {
   'use strict';
-  var grid = "";
+  var grid = '';
   switch (tpl) {
     case '1_100':
       grid = '<div class="ckeditor-col-container clearfix">';
@@ -81,7 +81,6 @@ function responsiveness_get_template(tpl) {
       grid += '<div class="grid-4 fourcol last-col"><p>lorem ipsum</p></div>';
       grid += '</div><br />';
       break;
-
   }
   return grid;
 }
