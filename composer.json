@@ -1,5 +1,5 @@
 {
-    "name": "kgaut/ckeditor_responsive_plugin",
+    "name": "drupal/ckeditor_responsive_plugin",
     "description": "This module provide a CKeditor plugin which allows the user to add responsive area in a textarea",
     "require": {
     	"composer/installers": "~1.0"
