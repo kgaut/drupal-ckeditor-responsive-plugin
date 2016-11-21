@@ -22,29 +22,6 @@ function ckeditor_responsive_plugin_page_build(array &$page) {
   );
   drupal_add_js(array('ckeditor_responsive_plugin' => $my_settings), 'setting');
 }
-/**
- * Define the CKEditor plugin.
- * Implements hook_ckeditor_plugin().
- *
- * @return array
- *   CKEditor settings.
- */
-function ckeditor_responsive_plugin_ckeditor_plugin() {
-  return array(
-    'responsivness' => array(
-      'name' => 'responsivness',
-      'desc' => t('CKEditor Responsive Plugin : Allow to insert responsive areas'),
-      'path' => drupal_get_path('module', 'ckeditor_responsive_plugin') . '/responsivness/',
-      'buttons' => array(
-        'responsivness' => array(
-          'icon' => 'images/responsivness.png',
-          'label' => t('Add responsive area'),
-        ),
-      ),
-      'default' => 't',
-    ),
-  );
-}
 
 /**
  * Extend CKEditor's settings.

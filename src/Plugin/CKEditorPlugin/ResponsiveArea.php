@@ -5,8 +5,11 @@
  * Contains \Drupal\ckeditor\Plugin\CKEditorPlugin\DrupalLink.
  */
 
-namespace Drupal\ckeditor\Plugin\CKEditorPlugin;
+namespace Drupal\ckeditor_responsive_plugin\Plugin\CKEditorPlugin;
 
+use Drupal\ckeditor\CKEditorPluginCssInterface;
+use Drupal\ckeditor\CKEditorPluginInterface;
+use Drupal\ckeditor\CKEditorPluginButtonsInterface;
 use Drupal\ckeditor\CKEditorPluginBase;
 use Drupal\editor\Entity\Editor;
 
@@ -16,52 +19,52 @@ use Drupal\editor\Entity\Editor;
  * @CKEditorPlugin(
  *   id = "responsivearea",
  *   label = @Translation("Responsive area"),
- *   module = "ckeditor_responsive_plugin"
  * )
  */
-class ResponsiveArea extends CKEditorPluginBase {
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getFile() {
-    return drupal_get_path('module', 'ckeditor_responsive_plugin') . '/js/plugins/responsivearea.js';
-  }
+class ResponsiveArea extends CKEditorPluginBase implements CKEditorPluginInterface, CKEditorPluginButtonsInterface, CKEditorPluginCssInterface {
 
   /**
    * {@inheritdoc}
    */
   public function getLibraries(Editor $editor) {
-    return array(
-      'core/drupal.ajax',
-    );
+    return [];
   }
 
+  function isInternal() {
+    return false;
+  }
   /**
    * {@inheritdoc}
    */
   public function getConfig(Editor $editor) {
-    return array(
-      'drupalLink_dialogTitleAdd' => t('Add Link'),
-      'drupalLink_dialogTitleEdit' => t('Edit Link'),
-    );
+    return [];
   }
 
   /**
    * {@inheritdoc}
    */
-  public function getButtons() {
-    $path = drupal_get_path('module', 'ckeditor') . '/js/plugins/drupallink';
-    return array(
-      'DrupalLink' => array(
-        'label' => t('Link'),
-        'image' => $path . '/link.png',
-      ),
-      'DrupalUnlink' => array(
-        'label' => t('Unlink'),
-        'image' => $path . '/unlink.png',
-      ),
-    );
+  public function getFile() {
+    $plugin_path = drupal_get_path('module','ckeditor_responsive_plugin');
+    return $plugin_path . '/js/plugins/responsivearea/plugin.js';
+  }
+
+  function getButtons() {
+    $plugin_path = drupal_get_path('module','ckeditor_responsive_plugin');
+    $path = $plugin_path.'/js/plugins/responsivearea/images/';
+    return [
+      'AddLayout'=> [
+        'label' => t('Add a responsive area'),
+        'image' => $path.'responsivearea.png',
+      ]
+    ];
+  }
+
+  function getCssFiles(Editor $editor) {
+    $plugin_path = drupal_get_path('module','ckeditor_responsive_plugin');
+    $path = $plugin_path.'/js/plugins/responsivearea/css/';
+    return [
+      $path.'responsivearea.css',
+    ];
   }
 
 }
