@@ -52,7 +52,7 @@ class ResponsiveArea extends CKEditorPluginBase implements CKEditorPluginInterfa
     $plugin_path = drupal_get_path('module','ckeditor_responsive_plugin');
     $path = $plugin_path.'/js/plugins/responsivearea/images/';
     return [
-      'AddLayout'=> [
+      'AddResponsiveArea'=> [
         'label' => t('Add a responsive area'),
         'image' => $path.'responsivearea.png',
       ]
@@ -61,7 +61,7 @@ class ResponsiveArea extends CKEditorPluginBase implements CKEditorPluginInterfa
 
   function getCssFiles(Editor $editor) {
     $plugin_path = drupal_get_path('module','ckeditor_responsive_plugin');
-    $path = $plugin_path.'/js/plugins/responsivearea/css/';
+    $path = $plugin_path.'/js/plugins/responsivearea/';
     return [
       $path.'responsivearea.css',
     ];
