@@ -6,7 +6,8 @@
     "license": "GPL-2.0+",
     "homepage": "https://www.drupal.org/sandbox/kgaut/2424721",
     "support": {
-        "issues": "https://www.drupal.org/project/issues/2424721"
+        "issues": "https://www.drupal.org/project/issues/2424721",
+   	"source": "http://cgit.drupalcode.org/ckeditor_responsive_plugin"
     },
     "require": {
     	"composer/installers": "~1.0"
