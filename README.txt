@@ -17,8 +17,8 @@ rich editing textarea.
 
 Instead of tables, the plugins insert divs with standard responsive css lasses.
 
- * For a full description of the module, visit the project sandbox page:
-   https://www.drupal.org/sandbox/kgaut/2424721
+ * For a full description of the module, visit the project page:
+   https://www.drupal.org/project/ckeditor_responsive_plugin
 
  * To submit bug reports and feature suggestions, or to track changes:
    https://www.drupal.org/project/issues/2424721
