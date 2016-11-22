@@ -6,4 +6,4 @@ dependencies:
 package: User interface
 core: 8.x
 version: VERSION
-configure: admin/config/content/ckeditor
+configure: filter.admin_overview

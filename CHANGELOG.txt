@@ -1,6 +1,7 @@
-CKeditor Responsive Plugin 8.x-1.0alpha1, xxxx-xx-xx
+CKeditor Responsive Plugin 8.x-1.0-beta1, 2016-11-22
 --------------------------
-- Start migration to Drupal 8
+- Update documentation
+- Port the module to Drupal 8
 
 CKeditor Responsive Plugin 7.x-1.0alpha1, xxxx-xx-xx
 --------------------------
