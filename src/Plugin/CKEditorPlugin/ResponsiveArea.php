@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\ckeditor\Plugin\CKEditorPlugin\DrupalLink.
- */
-
 namespace Drupal\ckeditor_responsive_plugin\Plugin\CKEditorPlugin;
 
 use Drupal\ckeditor\CKEditorPluginCssInterface;
