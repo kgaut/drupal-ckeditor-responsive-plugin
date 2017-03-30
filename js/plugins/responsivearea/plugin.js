@@ -13,7 +13,7 @@ function pluginInit(editor) {
   editor.responsivearea_path =  this.path;
 
   editor.ui.addButton('AddResponsiveArea', {
-    label: Drupal.t('Insert a responsive areaaaa'),
+    label: Drupal.t('Insert a responsive area'),
     command: 'beResponsive',
     icon: this.path + 'icons/responsivearea.png'
   });
