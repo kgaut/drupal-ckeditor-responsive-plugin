@@ -6,7 +6,6 @@
 
 CKEDITOR.plugins.add('responsivearea', {
   icons: 'responsivearea',
-  lang: 'en',
   init: pluginInit
 });
 
