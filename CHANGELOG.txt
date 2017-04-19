@@ -1,3 +1,7 @@
+CKeditor Responsive Plugin 8.x-1.0-beta5, 2017-03-30
+--------------------------
+- fix method visibility #2863387
+
 CKeditor Responsive Plugin 8.x-1.0-beta4, 2017-03-30
 --------------------------
 - fix 404 caused by missing language file #2865225

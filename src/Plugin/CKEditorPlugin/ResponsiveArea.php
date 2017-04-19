@@ -25,7 +25,7 @@ class ResponsiveArea extends CKEditorPluginBase implements CKEditorPluginInterfa
     return [];
   }
 
-  function isInternal() {
+  public function isInternal() {
     return false;
   }
   /**
@@ -43,7 +43,7 @@ class ResponsiveArea extends CKEditorPluginBase implements CKEditorPluginInterfa
     return $plugin_path . '/js/plugins/responsivearea/plugin.js';
   }
 
-  function getButtons() {
+  public function getButtons() {
     $plugin_path = drupal_get_path('module','ckeditor_responsive_plugin');
     $path = $plugin_path.'/js/plugins/responsivearea/images/';
     return [
@@ -54,7 +54,7 @@ class ResponsiveArea extends CKEditorPluginBase implements CKEditorPluginInterfa
     ];
   }
 
-  function getCssFiles(Editor $editor) {
+  public function getCssFiles(Editor $editor) {
     $plugin_path = drupal_get_path('module','ckeditor_responsive_plugin');
     $path = $plugin_path.'/js/plugins/responsivearea/';
     return [
